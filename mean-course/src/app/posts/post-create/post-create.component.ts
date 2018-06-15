@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './post-create.component.html'
 })
 
-export PostCreateComponent{
+export class PostCreateComponent{
 
 }
