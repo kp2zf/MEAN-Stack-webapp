@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatCardModule, MatButtonModule } from '@angular/material';
-import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 import { AppComponent } from './app.component';
@@ -21,7 +20,6 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
