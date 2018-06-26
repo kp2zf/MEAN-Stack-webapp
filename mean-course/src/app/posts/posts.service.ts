@@ -6,7 +6,7 @@ export class PostsService {
   private posts: Post[] = [];
 
   getPosts() {
-    return [...this.posts];
+    return this.posts;
   }
 
   addPost(title: string, content: string) {
