@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 
 const Post = require('./models/post');
 
-//expres
 const app = express();
 
 mongoose.connect("mongodb+srv://kush:ZakvitRbg9tOiuPn@cluster0-zsux9.mongodb.net/node-angular?retryWrites=true")
@@ -48,7 +47,6 @@ app.put("/api/posts/:id", (req, res, next) => {
     content: req.body.content
   });
   Post.updateOne({_id: req.params.id}, post).then(result => {
-    console.log(result);
     res.status(200).json({message: "Update Sucessful!"});
   });
 });
