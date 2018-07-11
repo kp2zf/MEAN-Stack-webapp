@@ -29,7 +29,8 @@ export class PostCreateComponent implements OnInit {
       'title': new FormControl(null, {
         validators: [Validators.required, Validators.minLength(3)]
       }),
-      'content': new FormControl(null, {validators: [Validators.required]})
+      'content': new FormControl(null, {validators: [Validators.required]}),
+      'image': new FormControl(null, {validators: [Validators.required]})
     });
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if (paramMap.has("postId")) {
@@ -49,6 +50,12 @@ export class PostCreateComponent implements OnInit {
         this.postId = null;
       }
     });
+  }
+
+  onImagePicked(event: Event){
+    const file = (event.target as HTMLInputElement).files[0];
+    this.form.patchValue({image: file});
+    this.form.get('image').updateValueAndValidity();
   }
 
   onSavePost() {
