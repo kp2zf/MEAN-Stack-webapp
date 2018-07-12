@@ -1,8 +1,9 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { LoginComponent } from "./auth/login/login.component";
 import {
   MatInputModule,
   MatCardModule,
@@ -24,7 +25,8 @@ import { AppRoutingModule } from "./app-routing.module";
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { AppRoutingModule } from "./app-routing.module";
     MatExpansionModule,
     MatProgressSpinnerModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
