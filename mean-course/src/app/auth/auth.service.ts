@@ -14,4 +14,8 @@ export class AuthService {
         console.log(response);
       });
   }
+
+  login(email: string, password: string) {
+    this.http.post("http://localhost:3000/api/user/login");
+  }
 }
