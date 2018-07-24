@@ -4,11 +4,10 @@ ul{
   margin: 0;
 }
 
-
-a {
+/* a {
   text-decoration: none;
   color: white;
-}
+} */
 
 .spacer {
   flex: 1 1 auto;
@@ -16,4 +15,21 @@ a {
 
 ul {
   display: flex;
+}
+
+mat-icon {
+  font-size: 30px;
+margin-right: 10px;
+}
+
+.title {
+  text-decoration: none;
+  color: white;
+}
+
+.but {
+  text-decoration: none;
+  color: #FF0266;
+  margin-right: 15px;
+
 }
