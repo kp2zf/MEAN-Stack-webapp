@@ -1,3 +1,4 @@
+<main>
 <mat-card>
   <mat-spinner *ngIf="isLoading"></mat-spinner>
   <form [formGroup]="form" (submit)="onSavePost()" *ngIf="!isLoading">
@@ -30,3 +31,4 @@
       type="submit">Save Post</button>
   </form>
 </mat-card>
+</main>

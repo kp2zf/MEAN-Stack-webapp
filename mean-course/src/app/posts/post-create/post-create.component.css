@@ -23,3 +23,9 @@ input[type="file"]{
   width: auto;
   height: auto;
 }
+
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+}
