@@ -21,6 +21,7 @@ export class PostListComponent implements OnInit, OnDestroy {
   userId: string;
   private postsSub: Subscription;
   private authStatusSub: Subscription;
+  particle: any;
 
   constructor(public postsService: PostsService, private authService: AuthService) {}
 
