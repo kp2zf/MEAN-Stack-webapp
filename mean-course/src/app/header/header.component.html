@@ -6,7 +6,7 @@
   <span class="spacer"></span>
   <ul>
     <li *ngIf="userIsAuthenticated">
-      <a mat-button routerLink="/create" routerLinkActive="mat-primary" class="but"> New Post </a>
+      <a mat-raised-button routerLink="/create" class="but"> New Post </a>
     </li>
     <li *ngIf="!userIsAuthenticated">
       <a mat-raised-button routerLink="/auth/login" class="but"> Login </a>
@@ -15,8 +15,7 @@
       <a mat-raised-button routerLink="/auth/signup" class="but"> Sign Up </a>
     </li>
     <li *ngIf="userIsAuthenticated">
-      <button mat-button (click)="onLogout()"> Logout </button>
+      <button mat-raised-button (click)="onLogout()" class="but"> Logout </button>
     </li>
   </ul>
 </mat-toolbar>
-<div id="particles-js"></div>
