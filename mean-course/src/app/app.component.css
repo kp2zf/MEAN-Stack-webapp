@@ -2,7 +2,28 @@
   width: 80%;
   margin: 1rem auto;
 } */
+/* div {
+  width: 80%;
+  margin: 1rem auto;
+} */
 
-app-header {
-  z-index: 0;
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: none;
+}
+
+main {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
 }

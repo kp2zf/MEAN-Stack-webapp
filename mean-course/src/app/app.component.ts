@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
             'position': 'fixed',
             'width': '100%',
             'height': '100%',
-            'z-index': -1,
+            'z-index': 100,
             'top': '0px',
             'left': '0px',
             'right': '0px',
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
                     value: 200,
                 },
                 color: {
-                    value: '#E91E63'
+                    value: '#003366'
                 },
                 shape: {
                     type: 'circle',
