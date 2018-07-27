@@ -10,7 +10,6 @@ import { ErrorInterceptor } from "./error-interceptor";
 import { ErrorComponent } from "./error/error.component";
 import { AngularMaterialModule } from "./angular-material.module";
 import { PostsModule } from "./posts/posts.module";
-import { ParticlesModule } from 'angular-particle';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { ParticlesModule } from 'angular-particle';
     BrowserAnimationsModule,
     HttpClientModule,
     AngularMaterialModule,
-    PostsModule,
-    ParticlesModule
+    PostsModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
