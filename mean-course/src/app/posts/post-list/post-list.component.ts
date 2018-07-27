@@ -21,7 +21,6 @@ export class PostListComponent implements OnInit, OnDestroy {
   userId: string;
   private postsSub: Subscription;
   private authStatusSub: Subscription;
-  likes = 50;
 
   constructor(public postsService: PostsService, private authService: AuthService) {}
 
@@ -61,12 +60,6 @@ export class PostListComponent implements OnInit, OnDestroy {
     }, () => {
       this.isLoading = false;
     });
-  }
-
-  onLike(){
-    this.likes = this.likes + 1;
-    if (this.likes > 999)
-      this.likes= 0;
   }
 
   ngOnDestroy() {
