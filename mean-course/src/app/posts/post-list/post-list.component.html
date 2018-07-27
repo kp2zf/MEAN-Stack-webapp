@@ -20,6 +20,7 @@
             <img [src]="post.imagePath" [alt]="post.title">
           </div>
           <p>{{ post.content }}</p>
+          <mat-icon>thumb-up</mat-icon>
           <mat-action-row *ngIf="userIsAuthenticated && userId == post.creator">
             <a mat-button color="primary" [routerLink]="['/edit', post.id]">EDIT</a>
             <button mat-button color="warn" (click)="onDelete(post.id)">DELETE</button>
@@ -33,5 +34,8 @@
   </div>
   <div id="footer">
     <h1>Copyright &#9400; TechJugg 2018</h1>
+    <a href="https://github.com/kp2zf/TechJugg">
+      <img width="25px" src='/assets/github.png'>
+    </a>
   </div>
 </div>
