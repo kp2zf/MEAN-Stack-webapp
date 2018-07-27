@@ -25,7 +25,7 @@ input[type="file"] {
 }
 
 main {
-  width: 80%;
+  width: 70%;
   margin: 1rem auto;
   background-color: #E91E63;
 }
@@ -64,7 +64,7 @@ p {
 }
 
 h6 {
-  color: white;
+  color: #f2f2f2;
   font-family: "Roboto";
   font-size: 40px;
   font-weight: bold;
