@@ -67,7 +67,7 @@ export class PostsService {
 
     this.http
       .post<{ message: string; post: Post }>(
-        "http://localhost:3000/api/posts",
+        "http://nodeangular-env-1.i2mfpepc3u.us-east-1.elasticbeanstalk.com/api/posts",
         postData
       )
       .subscribe(responseData => {

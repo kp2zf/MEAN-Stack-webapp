@@ -28,7 +28,7 @@
       </mat-accordion>
       <mat-paginator [length]="totalPosts" [pageSize]="postsPerPage" [pageSizeOptions]="pageSizeOptions" (page)="onChangedPage($event)" *ngIf="posts.length > 0">
       </mat-paginator>
-      <p class="info-text mat-body-1" *ngIf="posts.length <= 0 && !isLoading">No posts added yet!</p>
+      <h3 class="info-text mat-body-1" *ngIf="posts.length <= 0 && !isLoading">No posts added yet!</h3>
     </main>
   </div>
   <div id="footer">
