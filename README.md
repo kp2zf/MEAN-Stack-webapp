@@ -1,3 +1,3 @@
 # TechJugg
 
-![alt text](https://raw.githubusercontent.com/kp2zf/TechJugg/image.png)
+![alt text](https://raw.githubusercontent.com/kp2zf/TechJugg/master/image.png)
