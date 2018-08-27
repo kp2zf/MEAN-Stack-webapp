@@ -1,6 +1,6 @@
 # TechJugg
 
-[TechJugg.com](TechJugg.com)
+[techjugg.com](techjugg.com)
 
 TechJugg is a tech news platform powered fully by the users!
 Users can view posts from others and make/edit/delete their own posts.
